@@ -26,6 +26,9 @@ const solveTurnstileMin = require('./endpoints/solveTurnstile.min')
 const solveTurnstileMax = require('./endpoints/solveTurnstile.max')
 const wafSession = require('./endpoints/wafSession')
 
+app.get('/', async (req, res) => {
+    return 'Hello!'
+})
 
 app.post('/cf-clearance-scraper', async (req, res) => {
 
